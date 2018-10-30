@@ -13,12 +13,12 @@ word_dict = {}
 px = 50
 py = 50
 for word in list: 
-    if(py > 1100):
-    	py = 50
-    	px += 200
+    if(px > 1100):
+    	px = 50
+    	py += 200
     	
     word_dict[word] = tk.Button(text = word, command=lambda j=word: callback(j))
-    word_dict[word].place(bordermode=tk.OUTSIDE, height=100, width=100, x=py, y=px)
-    py += 200
+    word_dict[word].place(bordermode=tk.OUTSIDE, height=100, width=100, x=px, y=py)
+    px += 200
     
 top.mainloop()
