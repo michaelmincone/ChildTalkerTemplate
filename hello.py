@@ -16,11 +16,9 @@ for word in list:
     if(py > 1100):
     	py = 50
     	px += 200
+    	
     word_dict[word] = tk.Button(text = word, command=lambda j=word: callback(j))
-    word_dict[word].pack()
     word_dict[word].place(bordermode=tk.OUTSIDE, height=100, width=100, x=py, y=px)
     py += 200
     
-    
-	
 top.mainloop()
